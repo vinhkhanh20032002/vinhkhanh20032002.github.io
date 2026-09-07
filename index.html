@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khanh Vo — Security Portfolio</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-raised: #151b23;
+    --line: #22293380;
+    --text: #d7dde5;
+    --text-dim: #8b96a5;
+    --accent: #5fd3a3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header {
+    margin-bottom: 3.5rem;
+  }
+  .name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+    color: #fff;
+  }
+  .role {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin: 0 0 1.2rem;
+  }
+  .intro {
+    color: var(--text-dim);
+    max-width: 54ch;
+    font-size: 1.02rem;
+  }
+  .links {
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.92rem;
+  }
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .links a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin: 0 0 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .item {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 0.9rem;
+  }
+  .item h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.02rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .item p {
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 0.94rem;
+  }
+  .tag {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 0.72rem;
+    color: var(--accent);
+    border: 1px solid #5fd3a355;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.6rem;
+  }
+  .note {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  footer {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  footer a { color: var(--text-dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="name">Khanh Vo</p>
+    <p class="role">Information Security student · SOC Analyst track</p>
+    <p class="intro">
+      Final-year Information Security student at the University of South Florida,
+      building hands-on experience through a home security lab and working toward
+      a SOC Analyst role after graduation.
+    </p>
+    <div class="links">
+      <a href="mailto:youremail@usf.edu">Email</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Work in progress</h2>
+    <div class="item">
+      <p class="note">This site is just getting started. Below is what I'm planning to add first.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Coming soon</h2>
+    <div class="item">
+      <h3>Home SOC lab: SIEM + IDS build</h3>
+      <p>
+        A segmented home network (OPNsense, VLANs) running Wazuh as a SIEM and
+        Suricata for intrusion detection. Write-up will cover the network design,
+        the detection rules I configured, and a sample alert investigation.
+      </p>
+      <span class="tag">Wazuh · Suricata · OPNsense</span>
+    </div>
+    <div class="item">
+      <h3>SOC simulator: phishing incident walkthrough</h3>
+      <p>
+        A TryHackMe SOC simulator exercise where I traced a multi-stage attack —
+        recon, data staging, and DNS tunneling exfiltration — and mapped each
+        stage to MITRE ATT&amp;CK. Shows how I read logs and build an attack timeline.
+      </p>
+      <span class="tag">MITRE ATT&amp;CK · Log Analysis</span>
+    </div>
+  </section>
+
+  <footer>
+    Built for CIS 3367 — Portfolio, Fall 2026. More coming soon.
+  </footer>
+
+</div>
+</body>
+</html>
