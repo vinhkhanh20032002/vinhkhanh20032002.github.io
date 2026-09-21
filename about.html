@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — Khanh Vo</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-raised: #151b23;
+    --line: #22293380;
+    --text: #d7dde5;
+    --text-dim: #8b96a5;
+    --accent: #5fd3a3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  .name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+    color: #fff;
+  }
+  .role {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.95rem;
+    color: var(--accent);
+    margin: 0 0 1.2rem;
+  }
+  .links {
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.92rem;
+  }
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .links a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+  section {
+    margin-bottom: 3.5rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: var(--text-dim);
+    font-weight: 600;
+    margin: 0 0 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .item {
+    background: var(--bg-raised);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.3rem 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .item h3 {
+    margin: 0 0 1rem;
+    font-size: 1.02rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .item p {
+    margin: 1rem 0 0;
+    color: var(--text-dim);
+    font-size: 0.94rem;
+  }
+  .video-frame {
+    width: 100%;
+    max-width: 315px;
+    aspect-ratio: 9 / 16;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  footer {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  footer a { color: var(--text-dim); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="name">Khanh Vo</p>
+    <p class="role">About Me</p>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="mailto:youremail@usf.edu">Email</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Tell me about yourself</h2>
+    <div class="item">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/26lzOSOdjk0"
+          title="Bio video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p>
+        I'm Khanh Vo, a final-year Information Security student at the University of South
+        Florida, graduating in December 2026. I hold CompTIA A+ and Network+ certifications
+        and am currently working toward Security+. Alongside coursework, I built and documented
+        a multi-phase home SOC lab that includes an OPNsense firewall, a Wazuh SIEM, Suricata
+        IDS, Pi-hole DNS filtering, and a segmented VLAN network for Trusted, Lab, Infrastructure,
+        and IoT traffic. Before focusing fully on cybersecurity, I worked as a cable assembler at
+        Lockheed Martin and provided part-time IT support at a dental office, which sharpened my
+        attention to detail and my comfort troubleshooting under pressure. I'm bilingual in
+        Vietnamese and English, and I learn best through hands-on labs and simulations rather than
+        passive study — which is why I keep rebuilding and breaking my own lab environment to
+        understand it from the inside out.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What are you working toward after graduation?</h2>
+    <div class="item">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/btc1O_ptLvw"
+          title="Career goals video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p>
+        After graduation, I'm working toward an entry-level SOC Analyst role, with longer-term
+        interest in cloud security and application security. I'm following a structured
+        certification roadmap — Security+, Network+, CySA+, Microsoft SC-200, and BTL1 — while
+        using my home SOC lab as hands-on proof of the skills those certifications describe:
+        monitoring logs in Wazuh, tuning detections in Suricata, and defending a segmented network
+        the way I would in a real environment. I'm applying this outlook to my job search, sending
+        tailored resumes for entry-level SOC and analyst roles and building a portfolio site to walk
+        employers through my lab work. This path also reflects where the field is heading: the U.S.
+        Bureau of Labor Statistics (2025) projects 29% growth in information security analyst
+        employment from 2024 to 2034, with roughly 16,000 openings a year — a strong signal that
+        the entry-level effort I'm putting in now will pay off.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Built for CIS 3367 — Portfolio, Fall 2026. <a href="index.html">Back to home</a>
+  </footer>
+
+</div>
+</body>
+</html>
