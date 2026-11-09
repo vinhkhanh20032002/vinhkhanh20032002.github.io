@@ -1,0 +1,30 @@
+{
+  "name": "Khanh Vo",
+  "title": "Khanh Vo | SOC Analyst Portfolio",
+  "description": "Information Security student at USF aiming for a Blue Team / SOC Analyst role. Certifications, projects, daily lab write-ups and articles.",
+  "role": "Blue Team / SOC Analyst",
+  "headline": "I'm Khanh Vo. I'm learning to catch what attackers leave behind.",
+  "intro": "Final-year Information Security student at the University of South Florida with a data science background. I build, break and monitor things in my homelab, and document every lab I finish.",
+  "profile": [
+    { "label": "Education", "value": "B.S. Information Security, USF" },
+    { "label": "Graduating", "value": "December 2026" },
+    { "label": "Certs", "value": "A+, Security+ (CySA+, BTL1 in progress)" },
+    { "label": "Focus", "value": "SIEM, IDS, log analysis" },
+    { "label": "Location", "value": "Seattle, WA" }
+  ],
+  "aboutTitle": "Learning by building.",
+  "about": [
+    "I'm finishing my Information Security degree at USF in December 2026 and aiming for a Blue Team or SOC Analyst role. My data science background shapes how I read logs: I look for patterns first, then dig into the events behind them.",
+    "Most of my practice happens in a homelab with a segmented network, a SIEM, an IDS, DNS filtering and remote access. I hold CompTIA A+ and Security+, I'm working toward CySA+ and BTL1, and I write up the labs I finish so the reasoning is easy to follow."
+  ],
+  "contactTitle": "Hiring for a SOC role?",
+  "contactText": "I'm graduating in December 2026 and looking for entry-level Blue Team and SOC Analyst positions. Based in Seattle, WA.",
+  "email": "khanhvo8683@gmail.com",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/khanh-vo-8496b9378/",
+    "github": "https://github.com/khanhvo8683",
+    "medium": "",
+    "resume": ""
+  },
+  "footerRight": "Built with Astro, hosted on GitHub"
+}

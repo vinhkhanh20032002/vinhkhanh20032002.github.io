@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "Policy analysis report",
+    "linkLabel": "read on Drive",
+    "title": "Policy Analysis Report: CIRCIA Incident Reporting",
+    "summary": "This report on the proposed CIRCIA rule shows I can check what an article says about a regulation against the actual rule text instead of trusting the summary. It also shows I can turn policy into SOC work: who is affected, what a team would need to build for the 72-hour and 24-hour reporting deadlines, and what I would recommend doing now. For a SOC role, it shows I understand the compliance side of incident response, like reporting clocks and log retention.",
+    "tags": [
+      "CIRCIA",
+      "Policy analysis",
+      "Incident reporting",
+      "CISA"
+    ],
+    "url": "https://drive.google.com/file/d/1JmA71EdxV9pb8ZAW3z082Ad1ZzUq9KMF/view?usp=drive_link"
+  },
+  {
+    "kind": "Ethics decision memo",
+    "linkLabel": "read on Drive",
+    "title": "Ethics Decision Memo: Sixty Days of Silence",
+    "summary": "A decision memo on a smart lock vulnerability the vendor never answered: who is affected, the strongest case against disclosing, an escalation path from the CISO and Legal to CISA coordinated disclosure, and the policy gap that left the call to one analyst.",
+    "tags": [
+      "Ethics",
+      "Vulnerability disclosure",
+      "CISA",
+      "ACM Code of Ethics"
+    ],
+    "url": "https://drive.google.com/file/d/1cnqaRhy4Ao5W0DuEiEwiuVWZ5Fvo_Nqz/view?usp=drive_link"
+  }
+]

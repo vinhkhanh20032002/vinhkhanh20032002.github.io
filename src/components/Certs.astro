@@ -1,0 +1,39 @@
+---
+import certs from '../data/certs.json';
+import { asset } from '../utils';
+---
+
+<section id="certs" class="section">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow">Certifications</div>
+      <h2 class="h2">Foundations first.</h2>
+    </div>
+    <div class="grid-2">
+      {certs.map((c) => (
+        <div class={`cert ${c.status}`}>
+          {c.image ? (
+            <a href={asset(c.image)} target="_blank" rel="noopener noreferrer" aria-label={`Open ${c.name} certificate in a new tab`}>
+              <img class="cert-img" src={asset(c.image)} alt={c.alt} loading="lazy" />
+            </a>
+          ) : (
+            <div class="placeholder">Certificate image appears here once earned</div>
+          )}
+          <div class="body">
+            <div class="title-row">
+              <div class="name">{c.name}</div>
+              <span class={`pill ${c.status}`}>{c.status === 'earned' ? 'Earned' : 'In progress'}</span>
+            </div>
+            {c.date && <div class="meta">{c.date}</div>}
+            <div class="desc">{c.description}</div>
+            {c.verifyUrl && (
+              <a class="verify" href={c.verifyUrl} target="_blank" rel="noopener noreferrer">
+                Verify at verify.CompTIA.org &nearr;
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

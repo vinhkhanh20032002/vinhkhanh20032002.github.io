@@ -1,0 +1,140 @@
+[
+  {
+    "platform": "BTL1 lab",
+    "category": "Incident Response",
+    "title": "TheHive: Case Management for Incident Response",
+    "summary": "Used TheHive to work through a queue of security cases: read case status and tags, followed a phishing case through its tasks, observables and attachments, checked evidence and ownership on other cases, and reviewed task status and dashboards.",
+    "tags": [
+      "TheHive",
+      "Case management",
+      "Observables",
+      "Incident response"
+    ],
+    "url": "",
+    "badge": "labs/thehive-case-management.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Incident Response",
+    "title": "DeepBlueCLI: Triaging Windows Event Logs",
+    "summary": "Used DeepBlueCLI to triage sample Windows event logs: ran it against individual logs and then all of them at once, matched the detections to Event IDs and MITRE ATT&CK, and searched the combined output for indicators.",
+    "tags": [
+      "DeepBlueCLI",
+      "Windows event logs",
+      "PowerShell",
+      "MITRE ATT&CK"
+    ],
+    "url": "",
+    "badge": "labs/deepbluecli-event-log-analysis.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Incident Response",
+    "title": "CMD and PowerShell: Hunting for Signs of Compromise",
+    "summary": "Used basic Command Prompt and PowerShell commands on a Windows host to look for signs of compromise: exported the process list, reviewed local accounts and group membership, inspected running services and scheduled tasks, and picked out the items that did not belong.",
+    "tags": [
+      "PowerShell",
+      "CMD",
+      "Windows triage",
+      "Incident response"
+    ],
+    "url": "",
+    "badge": "labs/cmd-powershell-for-response.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Incident Response",
+    "title": "Wireshark: Tracing an Attack in Packet Captures",
+    "summary": "Analysed three packet captures in Wireshark: recognised host discovery and a port scan from the traffic pattern, recovered a file from HTTP traffic and hashed it, and read a clear-text FTP session to follow a dictionary attack and the file taken afterwards.",
+    "tags": [
+      "Wireshark",
+      "PCAP analysis",
+      "FTP",
+      "HTTP"
+    ],
+    "url": "",
+    "badge": "labs/wireshark-network-investigations.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Security Information and Event Monitoring",
+    "title": "Splunk Investigation: Alert Triage with Dashboards",
+    "summary": "Triaged IDS and firewall alerts from a prebuilt Splunk dashboard: read the queries behind the counters, drilled into individual alerts, checked the action taken and the response status to judge whether an attack worked, and pivoted from a firewall alert to the affected host in Sysmon.",
+    "tags": [
+      "Splunk",
+      "Dashboards",
+      "Suricata",
+      "Alert triage"
+    ],
+    "url": "",
+    "badge": "labs/splunk-investigation-4.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Security Information and Event Monitoring",
+    "title": "Splunk Investigation: Tracing a Suspicious Executable",
+    "summary": "Followed one suspicious executable across Sysmon, firewall and Suricata logs in Splunk: checked where the legitimate file should live, spotted the copy running from the wrong path, scoped its network connections, then confirmed what it was from its hash and the firewall classification.",
+    "tags": [
+      "Splunk",
+      "Sysmon",
+      "Suricata",
+      "Threat hunting"
+    ],
+    "url": "",
+    "badge": "labs/splunk-investigation-3.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Security Information and Event Monitoring",
+    "title": "Splunk Investigation: Scanner Activity in Firewall Logs",
+    "summary": "Built a Splunk search layer by layer (sourcetype, domain, keyword) to find vulnerability-scanner activity in firewall logs, then pulled the scanner, the source and target IPs and the first event time, reading the log's own timestamp instead of the display time.",
+    "tags": [
+      "Splunk",
+      "SPL",
+      "Firewall logs",
+      "Vulnerability scanning"
+    ],
+    "url": "",
+    "badge": "labs/splunk-investigation-2.jpg"
+  },
+  {
+    "platform": "BTL1 lab",
+    "category": "Security Information and Event Monitoring",
+    "title": "Splunk Investigation: Web Login Brute Force",
+    "summary": "Investigated a brute-force attempt against a web admin login in Splunk, pivoting from the login requests to the source IP, the target server and the submitted form data, and noted a detection idea for it.",
+    "tags": [
+      "Splunk",
+      "SPL",
+      "Brute force",
+      "HTTP logs"
+    ],
+    "url": "",
+    "badge": "labs/splunk-investigation-1.jpg"
+  },
+  {
+    "platform": "BTL1 lesson activity",
+    "category": "Security Information and Event Monitoring",
+    "title": "Writing Sigma Rules",
+    "summary": "Went through a public Sigma rule for DNS tunneling field by field, then adapted it to a hypothetical C2 scenario: scoped the selection to one domain, lowered the threshold and updated the tags.",
+    "tags": [
+      "Sigma",
+      "YAML",
+      "DNS tunneling",
+      "MITRE T1071.004"
+    ],
+    "url": ""
+  },
+  {
+    "platform": "BTL1 lesson activity",
+    "category": "Security Information and Event Monitoring",
+    "title": "Installing Sysmon and Reading Endpoint Telemetry",
+    "summary": "Installed Sysmon on a Windows 11 machine, traced my own nslookup through Event ID 1 and a hash check, then compared the default and a tuned config to see how the event mix changes.",
+    "tags": [
+      "Sysmon",
+      "Event Viewer",
+      "PowerShell",
+      "Process creation"
+    ],
+    "url": ""
+  }
+]

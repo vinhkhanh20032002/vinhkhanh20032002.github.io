@@ -1,0 +1,42 @@
+---
+import projects from '../data/projects.json';
+import { asset } from '../utils';
+---
+
+<section id="projects" class="section alt">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow">Projects</div>
+      <h2 class="h2">Things I've built.</h2>
+      <p class="lede">Each project links to a live demo, the source code, or the full write-up on Drive.</p>
+    </div>
+
+    <div class="grid-3">
+      {projects.map((p) => (
+        <article class="pcard">
+          {p.image ? (
+            <div class="thumb"><img src={asset(p.image)} alt={p.alt} loading="lazy" /></div>
+          ) : (
+            <div class="thumb"><div class="placeholder">{p.thumb}</div></div>
+          )}
+          <div class="info">
+            <div class="cat">{p.category}</div>
+            <h3 class="ptitle">{p.title}</h3>
+            <p class="psum">{p.summary}</p>
+            <div class="tags">{p.tags.map((t) => <span class="tag">{t}</span>)}</div>
+            <div class="plinks">
+              {p.demoUrl && <a class="link-btn" href={p.demoUrl} target="_blank" rel="noopener noreferrer">Live demo &nearr;</a>}
+              {p.sourceUrl && <a class="link-btn" href={p.sourceUrl} target="_blank" rel="noopener noreferrer">Source &nearr;</a>}
+              {p.driveUrl && <a class="link-btn" href={p.driveUrl} target="_blank" rel="noopener noreferrer">{p.driveLabel} &nearr;</a>}
+            </div>
+          </div>
+        </article>
+      ))}
+      <div class="next">
+        <div class="label">Next up</div>
+        <div class="t">[Your next project]</div>
+        <div class="d">Placeholder for a detection-engineering or incident-analysis project once it's ready to publish.</div>
+      </div>
+    </div>
+  </div>
+</section>

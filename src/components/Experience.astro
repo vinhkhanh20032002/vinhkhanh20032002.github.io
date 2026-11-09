@@ -1,0 +1,31 @@
+---
+import jobs from '../data/experience.json';
+---
+
+<section id="experience" class="section">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow">Experience</div>
+      <h2 class="h2">Work that built the habits.</h2>
+      <p class="lede">From shipping rooms and restaurants to help desk and aerospace hardware. The common thread is accuracy, procedure and staying calm under pressure.</p>
+    </div>
+    <ol class="timeline">
+      {jobs.map((j) => (
+        <li class="job">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="job-head">
+            <div class="job-title">{j.title}{j.type && <span class="job-type"> ({j.type})</span>}</div>
+            <div class="job-period">{j.period}</div>
+          </div>
+          <div class="job-org">{j.org}</div>
+          <ul class="job-list">
+            {j.bullets.map((b) => <li>{b}</li>)}
+          </ul>
+          <div class="tags">
+            {j.tags.map((t) => <span class="tag">{t}</span>)}
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

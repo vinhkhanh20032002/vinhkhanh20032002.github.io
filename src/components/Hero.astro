@@ -1,0 +1,21 @@
+---
+import site from '../data/site.json';
+---
+
+<div id="top" class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">{site.role}</div>
+    <h1>{site.headline}</h1>
+    <p>{site.intro}</p>
+    <div class="actions">
+      <a class="btn" href="#projects">View projects</a>
+      <a class="btn ghost" href="#labs">Read lab write-ups</a>
+    </div>
+  </div>
+  <div class="profile">
+    <div class="top"><span class="dot"></span><span>profile.summary</span></div>
+    {site.profile.map((r) => (
+      <div class="row"><span>{r.label}</span><span>{r.value}</span></div>
+    ))}
+  </div>
+</div>

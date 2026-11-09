@@ -1,0 +1,30 @@
+---
+import articles from '../data/articles.json';
+---
+
+<section id="writing" class="section alt">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow">Writing</div>
+      <h2 class="h2">Notes from the blue team side.</h2>
+      <p class="lede">Posts and write-ups on security, ethics and what I learn along the way.</p>
+    </div>
+
+    <div class="list">
+      {articles.length === 0 && <div class="empty">First article coming soon.</div>}
+      {articles.map((a) => (
+        <a class="item" href={a.url} target="_blank" rel="noopener noreferrer">
+          <div class="main">
+            <div class="text">
+              <div class="it">{a.title}</div>
+              <div class="im">{a.kind}</div>
+              <div class="is">{a.summary}</div>
+              <div class="tags">{a.tags.map((t) => <span class="tag">{t}</span>)}</div>
+            </div>
+          </div>
+          <span class="go">{a.linkLabel} &nearr;</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

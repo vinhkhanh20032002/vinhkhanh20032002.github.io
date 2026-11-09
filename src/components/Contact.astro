@@ -1,0 +1,35 @@
+---
+import site from '../data/site.json';
+import { href } from '../utils';
+
+// Links left empty in site.json are simply not shown.
+const links = [
+  ['LinkedIn', site.links.linkedin],
+  ['GitHub', site.links.github],
+  ['Medium', site.links.medium],
+  ['Resume (PDF)', site.links.resume],
+].filter(([, url]) => url);
+---
+
+<section id="contact" class="section">
+  <div class="contact">
+    <div class="copy">
+      <div class="eyebrow">Contact</div>
+      <h2 class="h2">{site.contactTitle}</h2>
+      <p>{site.contactText}</p>
+    </div>
+    <div class="btns">
+      <a class="btn" href={`mailto:${site.email}`}>{site.email}</a>
+      {links.map(([label, url]) => (
+        <a class="btn ghost" href={href(url)} target="_blank" rel="noopener noreferrer">{label}</a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<footer class="section">
+  <div class="footer-inner">
+    <span>{site.name} / {new Date().getFullYear()}</span>
+    <span>{site.footerRight}</span>
+  </div>
+</footer>

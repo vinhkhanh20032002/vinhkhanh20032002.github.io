@@ -1,0 +1,40 @@
+[
+  {
+    "id": "phishguard",
+    "category": "Detection tool",
+    "title": "PhishGuard Pro",
+    "thumb": "",
+    "image": "projects/phishguard.png",
+    "alt": "PhishGuard Pro URL Analysis showing a 100 out of 100 critical risk score for a phishing link",
+    "summary": "A phishing URL triage tool. Paste a link and get a 0 to 100 risk score, the redirect chain, reputation from five sources and a sandbox screenshot, plus defanged IOCs and starter Sigma, Splunk and Sentinel queries.",
+    "tags": [
+      "Phishing analysis",
+      "Cloudflare Workers",
+      "urlscan.io",
+      "MITRE T1566.002"
+    ],
+    "demoUrl": "https://khanhvo8683.github.io/phishguard/",
+    "sourceUrl": "https://github.com/khanhvo8683/phishguard",
+    "driveUrl": "https://drive.google.com/drive/folders/1JaoV1ejGIKh-kHlyM17GyrSM5jhN0uFj?usp=sharing",
+    "driveLabel": "Write-ups on Drive"
+  },
+  {
+    "id": "esp8266-power-control",
+    "category": "Home lab",
+    "title": "Wi-Fi Remote PC Power Control",
+    "thumb": "[photo: finished ESP8266 board]",
+    "image": "projects/esp8266.png",
+    "summary": "An ESP8266-based Wi-Fi board that lets me power a PC on, off and reset it remotely. I installed it in my home lab PC and wrote the setup guide: front-panel wiring, pass-through to the motherboard and Wi-Fi configuration.",
+    "tags": [
+      "ESP8266",
+      "Hardware installation",
+      "Wi-Fi",
+      "Documentation"
+    ],
+    "alt": "The ESP8266 Wi-Fi remote power controller board, with INPUT and OUTPUT front-panel headers",
+    "demoUrl": "",
+    "sourceUrl": "",
+    "driveUrl": "https://drive.google.com/file/d/1_PtlzRXL58WMYNGtIVwrjj8wOLV254XB/view?usp=sharing",
+    "driveLabel": "Write-up on Drive"
+  }
+]

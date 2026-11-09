@@ -1,0 +1,42 @@
+[
+  {
+    "id": "a-plus",
+    "name": "CompTIA A+",
+    "status": "earned",
+    "date": "Certified September 1, 2026 / valid through 2029",
+    "description": "Hardware, operating systems, troubleshooting and support fundamentals. Core 1 (220-1201) and Core 2 (220-1202).",
+    "image": "certs/cert-a-plus.png",
+    "alt": "CompTIA A+ certificate for Khanh Vinh Vo",
+    "verifyUrl": "https://verify.comptia.org"
+  },
+  {
+    "id": "security-plus",
+    "name": "CompTIA Security+",
+    "status": "earned",
+    "date": "Certified October 3, 2026 / valid through 2029",
+    "description": "Core security concepts, threats, architecture, operations and incident response (SY0-701).",
+    "image": "certs/cert-security-plus.png",
+    "alt": "CompTIA Security+ certificate for Khanh Vinh Vo",
+    "verifyUrl": "https://verify.comptia.org"
+  },
+  {
+    "id": "cysa-plus",
+    "name": "CompTIA CySA+",
+    "status": "progress",
+    "date": "",
+    "description": "Cybersecurity analyst skills: threat detection, log and traffic analysis, vulnerability management and incident response. Target exam date: [DATE].",
+    "image": "",
+    "alt": "",
+    "verifyUrl": ""
+  },
+  {
+    "id": "btl1",
+    "name": "Blue Team Level 1 (BTL1)",
+    "status": "progress",
+    "date": "",
+    "description": "Hands-on defensive security certification from Security Blue Team covering phishing analysis, threat intelligence, digital forensics, SIEM and incident response.",
+    "image": "",
+    "alt": "",
+    "verifyUrl": ""
+  }
+]

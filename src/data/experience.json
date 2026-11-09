@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Hardware Technician",
+    "type": "full-time",
+    "period": "Dec 2023 to Dec 2025",
+    "org": "Lockheed Martin, Oldsmar, FL",
+    "bullets": [
+      "Interpreted engineering blueprints and wiring diagrams to assemble complex hardware components.",
+      "Performed soldering, solder rework (desoldering and re-soldering), cable assembly and crimping of electrical contacts to IPC/WHMA-A-620 standards, with finished work checked by inspection.",
+      "Maintained strict quality control to aerospace manufacturing standards (IPC/WHMA-A-620), verified electrical connections and component alignment, and kept work documented and traceable.",
+      "When a cable or harness had a defect, worked with the quality engineer and the project engineer to agree on a fix, then reported the issue and the outcome back to the project."
+    ],
+    "tags": [
+      "Quality Control",
+      "IPC/WHMA-A-620",
+      "Soldering",
+      "Solder Rework",
+      "Documentation",
+      "Traceability",
+      "Blueprint Interpretation",
+      "Attention to Detail",
+      "Issue Reporting",
+      "Cross-team Collaboration"
+    ]
+  },
+  {
+    "title": "Front Desk & IT Support",
+    "type": "part-time",
+    "period": "Jun 2021 to Jun 2023",
+    "org": "Mang Dentistry LLC, Pinellas Park, FL",
+    "bullets": [
+      "Provided day-to-day IT support for office computers, including Windows updates, software troubleshooting and peripheral setup.",
+      "Troubleshot network connectivity issues and reset network equipment to restore service and minimize downtime.",
+      "Configured and supported printers and workstations, and managed patient scheduling as the front desk point of contact for IT issues."
+    ],
+    "tags": [
+      "Technical Support",
+      "Help Desk Support",
+      "Troubleshooting",
+      "Network Troubleshooting",
+      "Networking",
+      "Windows",
+      "Printer Support",
+      "Computer Hardware",
+      "Peripheral Configuration",
+      "Customer Service"
+    ]
+  },
+  {
+    "title": "Server & Cashier",
+    "type": "part-time",
+    "period": "Sep 2020 to May 2021",
+    "org": "Thinh An Kitchen & Tofu, Tampa, FL",
+    "bullets": [
+      "Took orders and served guests in a busy family-run restaurant, keeping orders accurate between the dining room and the kitchen.",
+      "Ran the register, handled cash and card payments, and balanced the register at the end of each shift.",
+      "Communicated with customers in both Vietnamese and English, handling questions and complaints during service."
+    ],
+    "tags": [
+      "Customer service",
+      "Cash handling",
+      "Register balancing",
+      "Bilingual (Vietnamese/English)",
+      "Working under pressure"
+    ]
+  },
+  {
+    "title": "Seasonal Shipping & Inventory Associate",
+    "type": "",
+    "period": "Summer 2019 & Summer 2020",
+    "org": "Belmar Pharma Solutions, Odessa, FL",
+    "bullets": [
+      "Packed and prepared pharmacy orders for pickup by UPS, FedEx and USPS, checking each package against its order before it shipped.",
+      "Counted inventory on scheduled days, recorded counts on a paper count sheet and handed them to my supervisor for review.",
+      "Worked to daily carrier pickup deadlines across two summer seasons."
+    ],
+    "tags": [
+      "Order fulfillment",
+      "Manual inventory counts",
+      "Shipping logistics",
+      "Attention to detail",
+      "Deadline-driven"
+    ]
+  }
+]

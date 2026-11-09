@@ -1,0 +1,21 @@
+---
+import site from '../data/site.json';
+const items = [
+  ['About', '#about'],
+  ['Experience', '#experience'],
+  ['Certs', '#certs'],
+  ['Projects', '#projects'],
+  ['Labs', '#labs'],
+  ['Writing', '#writing'],
+];
+---
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">{site.name}<span>.</span></a>
+    <nav aria-label="Primary">
+      {items.map(([label, target]) => <a href={target}>{label}</a>)}
+      <a class="btn sm" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>

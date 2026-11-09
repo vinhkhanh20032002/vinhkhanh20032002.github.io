@@ -1,0 +1,103 @@
+---
+import labs from '../data/labs.json';
+import { asset } from '../utils';
+
+// Newest lab first in labs.json. The day number counts down automatically.
+// Optional per-lab field "badge": path of a completion-certificate image in /public.
+const total = labs.length;
+const items = labs.map((l, i) => ({
+  ...l,
+  day: String(total - i).padStart(2, '0'),
+  badge: (l as { badge?: string }).badge ?? '',
+}));
+const categories = ['All', ...new Set(labs.map((l) => l.category))];
+const count = (c: string) => (c === 'All' ? total : labs.filter((l) => l.category === c).length);
+---
+
+<section id="labs" class="section">
+  <div class="container">
+    <div class="head">
+      <div class="eyebrow">Lab write-ups</div>
+      <h2 class="h2">Hands-on, documented.</h2>
+      <p class="lede">
+        A short log of the labs I work through: what the scenario was, the approach I took and the tools I used.
+        Training-lab write-ups stay private, so this list shows methodology only: no exam content, flags or answer keys.
+      </p>
+    </div>
+
+    <div class="chips" role="group" aria-label="Filter labs by domain">
+      {categories.map((c, i) => (
+        <button class="chip" data-cat={c} aria-pressed={i === 0 ? 'true' : 'false'}>{c} {count(c)}</button>
+      ))}
+    </div>
+
+    <div class="list">
+      {items.map((l) => {
+        const meta = [l.platform, l.date].filter(Boolean).join(' / ');
+        return (
+          <div class="item" data-lab data-cat={l.category}>
+            <div class="main">
+              <div class="day">{l.day}</div>
+              <div class="text">
+                {l.url ? (
+                  <a class="it stretch" href={l.url} target="_blank" rel="noopener noreferrer">{l.title}</a>
+                ) : (
+                  <div class="it">{l.title}</div>
+                )}
+                <div class="im">{meta}</div>
+                <div class="is">{l.summary}</div>
+                <div class="tags">{l.tags.map((t) => <span class="tag">{t}</span>)}</div>
+              </div>
+            </div>
+            <div class="side">
+              {l.badge && (
+                <button type="button" class="badge-link" data-full={asset(l.badge)} aria-label={`Enlarge completion certificate for ${l.title}`}>
+                  <img src={asset(l.badge)} alt="" loading="lazy" />
+                </button>
+              )}
+              {l.url && <span class="go">read on Drive ↗</span>}
+            </div>
+          </div>
+        );
+      })}
+      <div class="more-wrap"><button class="chip" id="labs-more" hidden></button></div>
+    </div>
+  </div>
+  <div id="lightbox" class="lightbox" hidden><img alt="Lab completion certificate" /></div>
+</section>
+
+<script>
+  const LIMIT = 3;
+  const chips = document.querySelectorAll<HTMLButtonElement>('.chip[data-cat]');
+  const rows = document.querySelectorAll<HTMLElement>('[data-lab]');
+  const more = document.getElementById('labs-more') as HTMLButtonElement;
+  let cat = 'All';
+  let open = false;
+  function render() {
+    let n = 0;
+    rows.forEach((r) => {
+      if (cat !== 'All' && r.dataset.cat !== cat) { r.hidden = true; return; }
+      n++;
+      r.hidden = !open && n > LIMIT;
+    });
+    more.hidden = n <= LIMIT;
+    more.textContent = open ? 'Show less' : `Show more (${n - LIMIT})`;
+  }
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      cat = chip.dataset.cat ?? 'All';
+      open = false;
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+      render();
+    });
+  });
+  more.addEventListener('click', () => { open = !open; render(); });
+  const box = document.getElementById('lightbox') as HTMLElement;
+  const boxImg = box.querySelector('img') as HTMLImageElement;
+  document.querySelectorAll<HTMLButtonElement>('.badge-link').forEach((b) => {
+    b.addEventListener('click', () => { boxImg.src = b.dataset.full ?? ''; box.hidden = false; });
+  });
+  box.addEventListener('click', () => { box.hidden = true; });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') box.hidden = true; });
+  render();
+</script>
